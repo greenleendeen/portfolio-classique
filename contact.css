@@ -1,0 +1,138 @@
+:root {
+    --primary1: #F9DBBA;
+    --primary2: #292F36;
+    --primary3: #1E3D6D;
+    --primary4: #F4F0EC;
+    /* --primary5: #5B99C2;*/
+    --primary5: #1A4870;
+    --terre: #96A495;
+    --contentColor: black;
+}
+
+input:required:invalid, input:focus:invalid {
+    
+    background-position: right top;
+    background-repeat: no-repeat;
+    border: 1px solid var(--primary2);
+  
+}
+input:required:valid, input:focus:valid {
+    border: 1px solid var(--primary2);
+   
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+ label {
+    color: #1E3D6D;
+ }
+ ::placeholder {
+    color: #96A495;
+ }
+
+ h3 {
+    color: #1E3D6D;
+ }
+
+/** Le conteneur des deux formulaires **/
+#form_insc{
+    width: 60%;
+    right: 0px;
+    min-height: 560px;	
+    margin: 5px auto;
+    padding:0px;	
+    width: 500px;
+    position: relative;	
+}
+
+/**** general text styling ****/
+#form_insc a{
+    color: var(--primary3);
+    text-decoration: underline;
+}
+
+#form_insc h1{
+    font-size: 32px;
+    color: var(--primary3);
+    padding: 2px 0 10px 0;
+    font-family: Arial;
+    font-variant:small-caps;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+#form_insc p{
+    color: var(--primary3);
+    margin-bottom:5px;
+}
+#form_insc p:first-child{
+    margin: 0px;
+}
+#form_insc label{
+    width: 100%;
+    color: var(--primary3);;
+    position: relative;
+}
+
+/**** advanced input styling ****/
+/* placeholder */
+::-webkit-input-placeholder  { 
+    color:var(--primary3); 
+    font-style: italic;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder{ 
+    color: var(--primary3);
+    font-style: italic;
+} 
+input {
+    outline: none;
+}
+
+input[type="submit"]{
+    width: 30%;
+    cursor: pointer;	
+    background:var(--primary3);
+    padding: 8px 5px;
+    font-family: 'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
+    color: #fff;
+    font-size: 24px;	
+    border: 1px solid rgb(128, 108, 122);	
+    margin-bottom: 10px;	
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;	
+    -webkit-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+        0px 0px 0px 3px rgb(92, 82, 82),
+        0px 5px 3px 3px rgb(117, 105, 105);
+    -moz-box-shadow:0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+        0px 0px 0px 3px rgb(105, 90, 90),
+        0px 5px 3px 3px rgb(110, 99, 99);
+    box-shadow:0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+        0px 0px 0px 3px rgb(117, 95, 95),
+        0px 5px 3px 3px rgb(109, 96, 96);
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+input[type="submit"]:hover{
+    background: var(--primary3);
+}
+input[type="submit"]:active,
+input[type="submit"]:focus{
+    background: var(--primary3);
+    position: relative;
+    top: 1px;
+    border: 1px solid var(--primary3);	
+    -webkit-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+}
+
+.sectionContact {
+width: 100%;
+display: flex;
+justify-content: space-around;
+
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+
+<body onload="init()" class="bgGreen flex">
+
+    <section class="sectionContact flex spaceBetwen">
+        <!--la div avec le formulaire-->
+        <div class=" flex  width45 ">
+            <div class="containerForm ">
+                <form action="" name="inscription_form" nsubmit="return checkForm();" method="post" class="form">
+                    <div class="">
+                        <h3> Me contacter</h3>
+                    </div>
+                    <div class="input">
+                        <label for="nomId" data-icon="u"> </label>
+                        <input id="nomId" name="nom" required type="text" maxlength="25" size="20"
+                            placeholder="votre nom" />
+                    </div>
+
+                    <div class="input">
+                        <label for="email"></label>
+                        <input required="" autocomplete="off" name="email" type="text" placeholder="votre email">
+                    </div>
+
+                    <div class="input">
+                        <label for="message"></label>
+                        <textarea required="" cols="30" rows="7" id="message" placeholder="votre message"></textarea>
+                    </div>
+                    <input type="submit" value="envoyer" />
+                </form>
+            </div>
+
+        </div>
+     
+        <div>
+            <a href="index.html"> <h4 class="btn"> Revenir à l'accueil</h4> </a>
+
+        </div>
+
+    </section>
+
+
+    <script src="contact.js" defer></script>
+
+</body>
+
+</html>
